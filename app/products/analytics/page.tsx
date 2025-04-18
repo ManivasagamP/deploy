@@ -365,7 +365,7 @@ export default function AnalyticsPage() {
           {faqItems.map((item) => (
             <div key={item.id} className="mx-4 md:mx-28 py-3">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value={item.id} className="border border-gray-200 rounded-lg overflow-hidden">
+                <AccordionItem value={String(item.id)} className="border border-gray-200 rounded-lg overflow-hidden">
                   <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                     <div className="flex justify-between items-center w-full">
                       <span className="text-left font-medium text-black">
