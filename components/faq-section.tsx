@@ -15,7 +15,7 @@ export default function FaqSection() {
         <div className=" mx-12">
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
@@ -33,7 +33,7 @@ export default function FaqSection() {
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
@@ -50,7 +50,7 @@ export default function FaqSection() {
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
@@ -67,7 +67,7 @@ export default function FaqSection() {
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ?

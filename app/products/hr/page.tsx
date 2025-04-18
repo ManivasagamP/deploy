@@ -10,16 +10,23 @@ export default function HRPage() {
       <Navbar activePage="products" />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#d97551] to-[#e2e2e2] min-h-[600px] flex items-center">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-lg">
-            <h1 className="text-4xl font-bold mb-4 text-white">Fusion HR</h1>
-            <p className="text-white mb-8">
-              FaceSense is a smart facial recognition system that streamlines HR operations with secure, real-time employee authentication and attendance tracking.
+      <section className="bg-gradient-to-r from-[#d97551] to-[#e2e2e2] py-16 md:py-32 relative">
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 bg-[url('/img/products/hrabout.png')] bg-cover bg-center opacity-40"></div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white leading-tight">
+              Fusion <span className="text-[#171440]">HR</span>
+            </h1>
+            <p className="text-white text-base sm:text-lg md:text-xl mb-6 leading-relaxed">
+            FaceSense is a smart facial recognition system that streamlines HR operations with secure, real-time employee authentication and attendance tracking.
             </p>
           </div>
         </div>
       </section>
+
       <div className="mx-4 sm:mx-6 lg:mx-12 px-4 sm:px-6 lg:px-8">
 
         {/* Camera Image Section */}
@@ -27,7 +34,7 @@ export default function HRPage() {
           <div className="container mx-auto px-4">
             <div className="rounded-2xl overflow-hidden">
               <Image
-                src="/img/products/hrabout.png"
+                src="/img/products/hrimage.png"
                 alt="Security Camera"
                 width={900}
                 height={400}
@@ -49,7 +56,7 @@ export default function HRPage() {
               <div className="">
                 <div className="bg-[#171440] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                       d="M15 12a3 3 0 01-6 0m6 0a3 3 0 00-6 0m6 0V8a3 3 0 00-6 0v4m6 0h3m-9 0H6m9 0v6a3 3 0 01-6 0v-6" />
                   </svg>
 
@@ -62,8 +69,8 @@ export default function HRPage() {
 
               <div className="">
                 <div className="bg-[#f16e5a] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  <svg xmlns="http://www.w3.org/20strokeLinejoin00/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
 
@@ -77,7 +84,7 @@ export default function HRPage() {
               <div className="">
                 <div className="bg-[#f16e5a] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                       d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v1h8v-1c0-2.21-1.79-4-4-4z" />
                   </svg>
 
@@ -91,7 +98,7 @@ export default function HRPage() {
               <div className="">
                 <div className="bg-[#171440] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                       d="M9 14H5a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v7m-4 4v3m0 0H8m4 0h4" />
                   </svg>
 
@@ -196,7 +203,7 @@ export default function HRPage() {
           <div className="mx-4 sm:mx-6 lg:mx-12">
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Can FaceSense replace manual or biometric attendance systems?
@@ -212,7 +219,7 @@ export default function HRPage() {
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Is the system compatible with existing HR software?
@@ -228,7 +235,7 @@ export default function HRPage() {
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       How secure is the facial data collected?
@@ -244,7 +251,7 @@ export default function HRPage() {
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Can it track late arrivals or early departures?

@@ -155,7 +155,7 @@ export default function SurveillancePage() {
           <div className="mx-4 sm:mx-6 lg:mx-12">
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Can Fusion Surveillance work without an active internet connection?
@@ -171,7 +171,7 @@ export default function SurveillancePage() {
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+               <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       What types of perimeters can this system be installed on?
@@ -187,7 +187,7 @@ export default function SurveillancePage() {
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       How does the system handle false alarms?
@@ -203,7 +203,7 @@ export default function SurveillancePage() {
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Is the system equipped with any alert mechanisms?

@@ -11,7 +11,7 @@ export default function ManufactureIndustry() {
       <Navbar activePage="industries" />
 
       {/* Hero Section */}
-      <div className="relative w-full h-[300px] md:h-[400px] bg-gradient-to-r overflow-hidden">
+      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
         <Image
           src="/img/industries/manufactureBanner.png"
@@ -20,10 +20,10 @@ export default function ManufactureIndustry() {
           className="object-cover mix-blend-multiply"
           priority
         />
-        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center ml-20">
-          <div className="border-l-4 border-white pl-4 max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Manufacturing Operations</h1>
-            <p className="text-white/90">
+        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center md:ml-15">
+          <div className="border-l-4 border-white pl-4 max-w-xl mx-4 md:mx-0">
+            <h1 className="text-3xl md:text-5xl font-bold text-white  mb-2 md:mb-4">Manufacturing Operations</h1>
+            <p className="text-white/90 text-sm md:text-base">
               From boosting operational efficiency and ensuring workplace safety to enabling smart, data-driven decisions—Fusion Engine powers the future of intelligent manufacturing.
 
             </p>
@@ -433,7 +433,7 @@ export default function ManufactureIndustry() {
           <div className="mx-4 sm:mx-6 lg:mx-12">
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       How does anomaly detection help?
@@ -450,7 +450,7 @@ export default function ManufactureIndustry() {
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Can the Fusion Engine predict equipment failures?
@@ -468,7 +468,7 @@ export default function ManufactureIndustry() {
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       How does Fusion Engine optimize industrial processes?
@@ -486,7 +486,7 @@ export default function ManufactureIndustry() {
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Does the Fusion Engine assist with environmental protection?

@@ -69,14 +69,14 @@ export default function Footer() {
             <div className="lg:col-span-7 p-1 text-start flex justify-center">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-25"> {/* Added gap for laptop view */}
                 {/* About Column */}
-                <div className="mb-6 flex flex-col items-center"> {/* Centered content for mobile view */}
+                <div className="mb-6 flex flex-col items-start"> {/* Centered content for mobile view */}
                   <h3 className="text-white font-bold mb-4 uppercase tracking-wider flex items-start">Quick Links</h3>
                   <ul className="space-y-2 text-center items-start">
                     <li><a href="/about" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> About Us</a></li>
                     <li><a href="/products/engine" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Products</a></li>
                     {/* <li><a href="#" className="text-white/80 hover:text-white transition-colors">Blog</a></li> */}
                     <li><a href="/industries" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Industries</a></li>
-                    <li><a href="/policy" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> privacy Policy</a></li>
+                    <li><a href="/policy" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Privacy Policy</a></li>
                   </ul>
                 </div>
 
@@ -93,14 +93,15 @@ export default function Footer() {
 
                 {/* Support Column */}
                 <div className="mb-6 flex flex-col items-start">
-                  <h3  className="text-white font-bold mb-4 uppercase tracking-wider text-center">Industries</h3>
+                  <h3 className="text-white font-bold mb-4 uppercase tracking-wider text-center">Industries</h3>
                   <ul className="space-y-2">
                     <li><a href="/industries/bank" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Bank</a></li>
                     <li><a href="/industries/retail" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Retail</a></li>
                     <li><a href="/industries/hospital" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Hospital</a></li>
-                    <li><a href="/industries/transport" className="textwite/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Transport</a></li>
-                    <li><a href="/industries/manufacture" className="tex-hite/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Manufacture</a></li>
+                    <li><a href="/industries/transport" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Transport</a></li>
+                    <li><a href="/industries/manufacture" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Manufacture</a></li>
                     <li><a href="/industries/advertisement" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Advertisement</a></li>
+                    <li><a href="/industries/nexusmall" className="text-white/80 hover:text-white transition-colors ease-in-out duration-300 flex items-start hover:translate-x-1"><span className="mr-1">▶</span> Nexus Mall</a></li>
                   </ul>
                 </div>
               </div>
@@ -122,57 +123,57 @@ export default function Footer() {
           {/* Floating icon set */}
 
           {/* mobile */}
-          <div className="block lg:hidden fixed bottom-0  bg-white w-full z-50">
-            <div className="flex justify-around">
-              <a href="tel:+919791597993" target="_blank" className="flex items-center gap-1 w-1/2">
-                <Image src="/img/footer/call3.gif" alt="Call Us" loading="lazy" width={62} height={62} style={{padding: "10px" }} unoptimized />
-                <p className="text-sm text-black">
+          <div className="block lg:hidden fixed bottom-0 w-full z-50">
+            <div className="flex justify-between px-4">
+              <a href="tel:+919791597993" target="_blank" className="flex items-center gap-1 w-1/2 mr-3">
+                <Image src="/img/footer/call3.gif" alt="Call Us" loading="lazy" width={62} height={62} style={{ padding: "10px" }} unoptimized />
+                {/* <p className="text-sm text-black">
                   Call Us
-                </p>
+                </p> */}
               </a>
-              <div className="h-5 flex items-center mt-3" />
-              <a href="https://api.whatsapp.com/send?phone=+919791597993&text=Hello The Fusion Apps!" target="_blank" className="flex items-center gap-1 w-1/2" aria-label="Connect Us via WhatsApp">
-                <Image src="/img/footer/WA.gif" alt="Chat Us" loading="lazy" width={62} height={62} style={{padding: "10px" }} unoptimized />
-                <p className="text-sm text-black" >
+              {/* <div className="h-5 flex items-end mt-3" /> */}
+              <a href="https://api.whatsapp.com/send?phone=+919791597993&text=Hello The Fusion Apps!" target="_blank" className="flex items-center mr-5" aria-label="Connect Us via WhatsApp">
+                <Image src="/img/footer/WA.gif" alt="Chat Us" loading="lazy" width={62} height={62} style={{ padding: "10px" }} unoptimized />
+                {/* <p className="text-sm text-black" >
                   Chat Us
-                </p>
+                </p> */}
               </a>
-
             </div>
           </div>
+
 
           {/* desktop */}
           <div className="hidden lg:block">
             <a
               href="tel:+919791597993"
-              className="fixed bottom-4 left-6 w-14 h-14 shadow-lg rounded-full  flex items-center justify-center "
+              className="fixed bottom-4 left-6 w-18 h-18 shadow-lg rounded-full  flex items-center justify-center "
               target="_blank"
             >
               <Image
                 src="/img/footer/call3.gif"
                 alt="Call Us"
-                height={62}
-                width={62}
+                height={82}
+                width={82}
                 className="object-contain"
                 unoptimized
               />
             </a>
 
-              <a 
-                href="https://api.whatsapp.com/send?phone=+919791597993&text=Hello The Fusion Apps!" 
-                target="_blank" 
-                className="fixed bottom-4 right-6 w-14 h-14 rounded-full  flex items-center justify-center "
-                aria-label="Connect Us via WhatsApp"
-                >
-                <Image 
-                  src="/img/footer/WA.gif" 
-                  alt="Chat Us" 
-                  height={60}
-                  width={60}
-                  className=" object-cover" 
-                  unoptimized
-                />
-              </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+919791597993&text=Hello The Fusion Apps!"
+              target="_blank"
+              className="fixed bottom-4 right-6 w-18 h-18 rounded-full  flex items-center justify-center "
+              aria-label="Connect Us via WhatsApp"
+            >
+              <Image
+                src="/img/footer/WA.gif"
+                alt="Chat Us"
+                height={80}
+                width={80}
+                className=" object-cover"
+                unoptimized
+              />
+            </a>
           </div>
 
         </div>

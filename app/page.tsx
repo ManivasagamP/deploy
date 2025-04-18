@@ -311,7 +311,7 @@ export default function Home() {
         <section className="md:py-20 py-6 bg-white">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-16 text-black">
-              Our <span className="text-[#6C5DD3]">Products</span>
+              Our <span className="text-[#6C5DD3]">Features</span>
             </h2>
 
             {/* Product Card - Analytics */}
@@ -341,23 +341,21 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="space-y-1.5">
-                    <div className="flex items-center gap-3">
-                      <div className="">
-                        <div className="w-4 h-4">
-                          <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
-                        </div>
+                  <div className="flex items-start gap-3">
+                    <div className="">
+                      <div className="w-4 h-4 mt-1">
+                        <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                       </div>
-                      <p className="text-[#303030]">Ensure security and loss prevention with real-time intrusion alerts </p>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <div className="">
-                        <div className="w-4 h-4">
-                          <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
-                        </div>
+                    <p className="text-[#303030]">Ensure security and loss prevention with real-time intrusion alerts </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="">
+                      <div className="w-4 h-4 mt-1">
+                        <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                       </div>
-                      <p className="text-[#303030]">Improve operations with facial recognition-based staff attendance</p>
                     </div>
+                    <p className="text-[#303030]">Improve operations with facial recognition-based staff attendance</p>
                   </div>
 
                   <p className="bg-[#5240c5] text-white px-4 sm:px-6 py-2 rounded-full inline-block font-medium hover:bg-[#311fa4] transition-colors">
@@ -365,7 +363,7 @@ export default function Home() {
                   </p>
 
                   {/* <div className="flex items-center gap-3">
-                    <div className="w-4 h-4">
+                    <div className="w-4 h-4 mt-1">
                       <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                     </div>
                     <p className="text-[#303030]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -408,9 +406,9 @@ export default function Home() {
                 {/* Feature List */}
                 <div >
                   <div className="space-y-4">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-start gap-3">
                       <div className="">
-                        <div className="w-4 h-4">
+                        <div className="w-4 h-4 mt-1">
                           <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                         </div>
                       </div>
@@ -418,18 +416,18 @@ export default function Home() {
                       </p>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-start gap-3">
                       <div className="">
-                        <div className="w-4 h-4">
+                        <div className="w-4 h-4 mt-1">
                           <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                         </div>
                       </div>
                       <p className="text-[#303030]">Streamlines parking by identifying vehicles and allocating slots instantly.</p>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-start gap-3">
                       <div className="">
-                        <div className="w-4 h-4">
+                        <div className="w-4 h-4 mt-1">
                           <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                         </div>
                       </div>
@@ -485,17 +483,17 @@ export default function Home() {
                   </div>
 
                   <div className="space-y-1.5">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-start gap-3">
                       <div className="">
-                        <div className="w-4 h-4">
+                        <div className="w-4 h-4 mt-1">
                           <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                         </div>
                       </div>
                       <p className="text-[#303030]">Detects only human intrusions with precision using AI and deep learning scene analysis</p>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-start gap-3">
                       <div className="">
-                        <div className="w-4 h-4">
+                        <div className="w-4 h-4 mt-1">
                           <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                         </div>
                       </div>
@@ -550,30 +548,23 @@ export default function Home() {
                 </div>
 
                 {/* Feature List */}
-                <div className="space-y-1.5">
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="">
-                        <div className="w-4 h-4">
-                          <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
-                        </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="">
+                      <div className="w-4 h-4 mt-1">
+                        <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                       </div>
-                      <p className="text-[#303030]">Automates employee attendance and access control with microsecond facial identification.</p>
                     </div>
+                    <p className="text-[#303030]">Automates employee attendance and access control with microsecond facial identification.</p>
+                  </div>
 
-                    <div className="flex items-center gap-3">
-                      <div className="">
-                        <div className="w-4 h-4">
-                          <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
-                        </div>
+                  <div className="flex items-start gap-3">
+                    <div className="">
+                      <div className="w-4 h-4 mt-1">
+                        <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                       </div>
-                      <p className="text-[#303030] mb-2">Centralized dashboard lets HR easily manage records across locations.</p>
                     </div>
-
-                    {/* <div className="flex items-center gap-3">
-                    <img src="/img/tickicon.png" alt="Tick Icon" className="w-4 h-4" />
-                    <p className="text-[#303030]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div> */}
+                    <p className="text-[#303030] mb-2">Centralized dashboard lets HR easily manage records across locations.</p>
                   </div>
 
                   <p className="bg-[#5240c5] text-white px-4 sm:px-6 py-2 rounded-full inline-block font-medium hover:bg-[#311fa4] transition-colors">
@@ -655,7 +646,10 @@ export default function Home() {
 
       {/* Overview Section */}
       <div className=" md:mx-12 px-4 md:px-12 ">
-        <section className="md:py-20 py-6 bg-[#F8F8FF]">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 mt-10 text-black">
+          Our <span className="text-[#6C5DD3]">Products</span>
+        </h2>
+        <section className="md:py-20  bg-[#F8F8FF] rounded-[32px]">
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Fusion Engine Card */}
@@ -670,7 +664,7 @@ export default function Home() {
                   />
                 </div>
 
-                <p className="text-[#666666] mb-4">
+                <p className="text-[#666666] mt-10 mb-4">
                   Fusion Engine is an AI-powered video processing powerhouse that turns raw visuals into actionable insights.From real-time recognition to intelligent alerts, it revolutionizes surveillance, industrial monitoring, and smart environments.... </p>
 
                 <p className="bg-[#5240c5] text-white px-4 sm:px-6 py-2 rounded-full inline-block font-medium hover:bg-[#311fa4] transition-colors">
@@ -702,8 +696,11 @@ export default function Home() {
         </section>
 
         {/* Industry Showcase Section */}
-        <section className="md:py-20 py-6 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
+        <section className=" py-6 bg-white">
+          <h2 className="text-3xl md:text-4xl font-bold md:mt-10 text-black">
+            Our <span className="text-[#6C5DD3]">Solutions</span>
+          </h2>
+          <div className="container mx-auto px-4 md:px-8 mt-10">
             <div className="flex flex-wrap justify-between gap-4">
               {industries.map((industry, index) => (
                 <div key={index} className="relative group overflow-hidden rounded-[20px] w-full sm:w-[45%] lg:w-[22%] h-[350px] md:h-[450px]">

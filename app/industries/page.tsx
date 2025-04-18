@@ -28,7 +28,7 @@ export default function Industries() {
           className="object-cover mix-blend-multiply"
           priority
         />
-        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center ml-3">
+        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center md:ml-15">
           <div className="border-l-4 border-white pl-4 max-w-xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Industries</h1>
             <p className="text-white/90">
@@ -112,13 +112,12 @@ export default function Industries() {
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
                   <GraduationCap className="text-blue-700 h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-black">EDUCATION</h3>
+                <h3 className="text-xl font-bold mb-2 text-black">TRANSPORT</h3>
                 <p className="text-gray-600 mb-6">
-                  Revolutionize learning with our educational technology solutions, including learning management systems,
-                  student engagement platforms, and administrative tools.
+                  From optimizing traffic flow and enhancing commuter safety to enabling smarter infrastructure with real-time insights—Fusion Engine transforms transportation systems for a more connected, efficient future.
                 </p>
                 <div className="bg-[#5240c5] text-white px-4 sm:px-6 py-2 rounded-full inline-block font-medium hover:bg-[#311fa4] transition-colors">
-                  <span><a href="./industries/education">Learn more</a></span>
+                  <span><a href="./industries/transport">Learn more</a></span>
                   {/* <ArrowRight className="ml-2 h-4 w-4" /> */}
                 </div>
               </CardContent>
@@ -157,6 +156,24 @@ export default function Industries() {
                 </p>
                 <div className="bg-[#5240c5] text-white px-4 sm:px-6 py-2 rounded-full inline-block font-medium hover:bg-[#311fa4] transition-colors">
                   <span><a href="./industries/bank">Learn more</a></span>
+                  {/* <ArrowRight className="ml-2 h-4 w-4" /> */}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* MAll */}
+            <Card className="border hover:shadow-lg transition-all duration-300 overflow-hidden group">
+              <div className="h-1 bg-gradient-to-r from-orange-500 to-orange-400"></div>
+              <CardContent className="p-6">
+                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                  <Hotel className="text-blue-700 h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-black">NEXUS MALL</h3>
+                <p className="text-gray-600 mb-6">
+                  From streamlining operations and enhancing customer experiences to improving decision-making with real-time insights—Fusion Engine helps retailers stay ahead in a fast-paced market. Unlock the full potential of your retail business today.
+                </p>
+                <div className="bg-[#5240c5] text-white px-4 sm:px-6 py-2 rounded-full inline-block font-medium hover:bg-[#311fa4] transition-colors">
+                  <span><a href="./industries/nexusmall">Learn more</a></span>
                   {/* <ArrowRight className="ml-2 h-4 w-4" /> */}
                 </div>
               </CardContent>

@@ -21,20 +21,18 @@ const CaseStudyPage = () => {
           backgroundImage: `url("/img/casestudy/Rectangle 2419.png"), url("/img/casestudy/banner.png")`,
         }}
       >
-        
+
 
         {/* Content Container */}
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           {/* Heading */}
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-            Despite its expansive infrastructure and diverse offerings, Texvalley faced significant operational challenges:
+            Texvalley Mall, Erode
           </h1>
 
           {/* Description */}
           <p className="text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
-          5K Care is a rapidly growing automotive franchise network in India, with over 200 service outlets,
-          80–90% of which are franchised. With a strong retail presence, their model focuses on delivering
-          standardized vehicle maintenance and car care services across locations.
+            Strategically positioned on the Salem-Kochi highway (NH544), it serves as a hub for both B2B and B2C commerce, housing hundreds of retail outlets, a hypermarket, multiplex, food court, and entertainment zones.
           </p>
         </div>
       </div>
@@ -65,22 +63,28 @@ const CaseStudyPage = () => {
               {/* Feature List */}
               <div className="space-y-4 relative z-10">
                 <p className="text-[#303030] mb-5">Despite its expansive infrastructure and diverse offerings, Texvalley faced significant operational challenges:</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
-                  <p className="text-[#303030]"><span className="font-bold">Lack of Customer Insights:</span> There was no system in place to track customer demographics, footfall, or engagement levels across different zones and floors.​
+                  <p className="text-[#303030]"><span className="font-bold">Lack of Customer Insights:</span> There was no system in place to track customer demographics, footfall, or engagement levels across different zones and floors.
                   </p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
                   <p className="text-[#303030]"><span className="font-bold">Inefficient Vehicle Management:</span> The mall relied on a manual token system for vehicle entry and exit, leading to congestion and lack of real-time data on parking utilization.​</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
                   <p className="text-[#303030]"><span className="font-bold">Manual Operational Oversight:</span> Monitoring of shop openings, housekeeping schedules, and overall operational compliance was done manually, resulting in inconsistencies and inefficiencies.​</p>
                 </div>
@@ -110,23 +114,29 @@ const CaseStudyPage = () => {
               {/* Feature List */}
               <div className="space-y-4 relative z-10">
                 <p className="text-[#303030] mb-5">To address these challenges, we implemented a tailored suite of our Fusion Engine solutions:</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
                   <p className="text-[#303030]"><span className="font-bold">Fusion Analytics:</span> Developed specifically for mall environments, this module provided real-time data on customer entry and exit patterns, peak visiting hours, engagement activities, and demographic segmentation (adults, children, etc.).​</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
                   <p className="text-[#303030]"><span className="font-bold">Fusion ANPR (Automatic Number Plate Recognition):</span> Automated vehicle access control, replacing the manual token system, and provided real-time data on vehicle flow and parking utilization.​</p>
                 </div>
-                    <div className="flex items-center gap-3">
-                    <div className="w-4 h-4">
-                        <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
                     </div>
-                    <p className="text-[#303030]"><span className="font-bold">Fusion Surveillance: </span>Enhanced operational oversight by monitoring shop opening times, housekeeping activities, and ensuring compliance with operational protocols.​</p>
+                  </div>
+                  <p className="text-[#303030]"><span className="font-bold">Fusion Surveillance: </span>Enhanced operational oversight by monitoring shop opening times, housekeeping activities, and ensuring compliance with operational protocols.​</p>
                 </div>
                 {/* <p className="text-[#303030]">This combination was tailored to help 5K Care build a reliable system that could verify actual service volumes, highlight underbilling, and assess individual outlet performance.</p> */}
               </div>
@@ -167,38 +177,48 @@ const CaseStudyPage = () => {
               <div className="space-y-4 relative z-10">
                 {/* <p className="text-[#303030] mb-5">Our engagement with Texvalley unfolded in a phased manner:​</p> */}
                 <p className="text-[#303030]">Our engagement with Texvalley unfolded in a phased manner:​</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
                   <p className="text-[#303030]"><span className="font-bold">Assessment and Customization: </span>Conducted a comprehensive analysis of Texvalley&apos;s existing systems and identified key areas for improvement.​</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
-                  <p className="text-[#303030]"><span className="font-bold">Pilot Deployment:</span> Implemented the Fusion Engine in select zones to test functionality and gather feedback.​
+                  <p className="text-[#303030]"><span className="font-bold">Pilot Deployment:</span> Implemented the Fusion Engine in select zones to test functionality and gather feedback.
                   </p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
-                  <p className="text-[#303030]"><span className="font-bold">Full-Scale Rollout: </span>Expanded the deployment across all 500 surveillance cameras, integrating analytics and ANPR systems throughout the mall.​
+                  <p className="text-[#303030]"><span className="font-bold">Full-Scale Rollout: </span>Expanded the deployment across all 500 surveillance cameras, integrating analytics and ANPR systems throughout the mall.
                   </p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
-                  <p className="text-[#303030]"><span className="font-bold">Training and Support:</span> Provided comprehensive training to Texvalley&apos;s staff to ensure seamless adoption and utilization of the new systems.​​
+                  <p className="text-[#303030]"><span className="font-bold">Training and Support:</span> Provided comprehensive training to Texvalley&apos;s staff to ensure seamless adoption and utilization of the new systems.
                   </p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-4 h-4">
-                    <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                <div className="flex items-start gap-3">
+                  <div className="">
+                    <div className="w-4 h-4 mt-1">
+                      <Image src="/img/tickicon.png" alt="Tick Icon" width={16} height={16} />
+                    </div>
                   </div>
-                  <p className="text-[#303030]"><span className="font-bold">Continuous Monitoring:</span>  Established ongoing support mechanisms, including real-time alerts and system health checks, to maintain optimal performance.​
+                  <p className="text-[#303030]"><span className="font-bold">Continuous Monitoring:</span>  Established ongoing support mechanisms, including real-time alerts and system health checks, to maintain optimal performance.
                   </p>
                 </div>
                 {/* <p className="text-[#303030] mb-5">The pilot&apos;s output revealed 15% underbilling, exposing a critical revenue leakage. The results helped build trust and paved the way for full-scale deployment.</p> */}
@@ -207,20 +227,28 @@ const CaseStudyPage = () => {
           </div>
 
           <h2 className="text-3xl font-bold text-center text-black mb-10">Case studies</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-10">
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
-              <Image src="/img/casestudy/Frame 8.png" alt="Security Camera 1" width={400} height={300} className="rounded-t-lg object-cover" />
+              <div className="flex justify-center items-center h-full w-full">
+                <Image
+                  src="/img/casestudy/Frame 8.png"
+                  alt="Security Camera 1"
+                  width={400}
+                  height={300}
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
               <h3 className="font-bold text-lg mt-4 text-black"> Emerald Jewel Industry</h3>
               <p className="text-gray-600 mt-2 flex-grow">
-              Emerald Jewel Industry India Ltd, founded in 1984 by Mr. K. Srinivasan in Coimbatore, Tamil Nadu, has grown to become one of the world&apos;s largest jewelry manufacturers. With a workforce exceeding 5,000 employees and a design repository of over 500,000 unique creations, Emerald operates four state-of-the-art manufacturing units in Coimbatore, specializing in various jewelry-making techniques. The company has been recognized with numerous accolades, including the &apos;Manufacturer of the Year 2020&apos; by JNA Awards, underscoring its commitment to excellence and innovation in the jewelry industry. </p>
-              <a href="/casestudy/emeraldjewel" className="mt-4 py-2 w-{15} h-{15} bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-400 transition duration-200 inline-block text-center">
+                Emerald Jewel Industry India Ltd, founded in 1984 by Mr. K. Srinivasan in Coimbatore, Tamil Nadu, has grown to become one of the world&apos;s largest jewelry manufacturers. With a workforce exceeding 5,000 employees and a design repository of over 500,000 unique creations, Emerald operates four state-of-the-art manufacturing units in Coimbatore, specializing in various jewelry-making techniques. The company has been recognized with numerous accolades, including the &apos;Manufacturer of the Year 2020&apos; by JNA Awards, underscoring its commitment to excellence and innovation in the jewelry industry. </p>
+              <a href="/casestudy" className="mt-4 py-2 w-{15} h-{15} bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-400 transition duration-200 inline-block text-center">
                 View more
               </a>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
+            {/* <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
               <Image src="/img/casestudy/Frame 9.png" alt="Security Camera 2" width={400} height={300} className="rounded-t-lg object-cover" />
               <h3 className="font-bold text-lg mt-4 text-black">Texvalley Mall</h3>
               <p className="text-gray-600 mt-2 flex-grow">
@@ -228,14 +256,22 @@ const CaseStudyPage = () => {
               <a href="/casestudy/texvalley" className="mt-4 py-2 w-{15} h-{15} bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-400 transition duration-200 inline-block text-center">
                 View more
               </a>
-            </div>
+            </div> */}
 
             {/* Card 3 */}
             <div className="bg-white rounded-lg shadow-md p-6 flex flex-col">
-              <Image src="/img/casestudy/Frame 10.png" alt="Security Camera 3" width={400} height={300} className="rounded-t-lg object-cover" />
+              <div className="flex justify-center items-center w-full">
+                <Image
+                  src="/img/casestudy/Frame 10.png"
+                  alt="Security Camera 1"
+                  width={400}
+                  height={300}
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
               <h3 className="font-bold text-lg mt-4 text-black">5K Care – India&apos;s Fast-Growing Car Care</h3>
               <p className="text-gray-600 mt-2 flex-grow">
-              5K Care is a rapidly growing automotive franchise network in India, with over 200 service outlets, 80–90% of which are franchised. With a strong retail presence, their model focuses on delivering standardized vehicle maintenance and car care services across locations.
+                5K Care is a rapidly growing automotive franchise network in India, with over 200 service outlets, 80–90% of which are franchised. With a strong retail presence, their model focuses on delivering standardized vehicle maintenance and car care services across locations.
 
               </p>
               <a href="/casestudy/5care" className="mt-4 py-2 w-{15} h-{15} bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-400 transition duration-200 inline-block text-center">

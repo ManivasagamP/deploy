@@ -5,9 +5,16 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import DemoSection from "@/components/demo-section"
 import { useState } from "react"
+import React from "react"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 export default function AnalyticsPage() {
-  
+
   const categories = [
     "Retail",
     "Hospitality",
@@ -16,21 +23,11 @@ export default function AnalyticsPage() {
     "Advertisement",
     "Banking",
   ] as const;
-  
-  type Category = typeof categories[number];
-  
-  const [activeCategory, setActiveCategory] = useState<Category>("Retail");
-  
-  
 
-  const customers = [
-    { name: "Adobe", logo: "/img/products/1.png" },
-    { name: "Stripe", logo: "/img/products/2.png" },
-    { name: "HubSpot", logo: "/img/products/3.png" },
-    { name: "Asana", logo: "/img/products/4.png" },
-    { name: "Gumroad", logo: "/img/products/5.png" },
-    { name: "Linear", logo: "/img/products/6.png" }
-  ];
+  type Category = typeof categories[number];
+
+  const [activeCategory, setActiveCategory] = useState<Category>("Retail");
+
   const contentData = {
     Retail: [
       { title: 'Queue Management', image: '/img/analytics/queue-management.jpg' },
@@ -63,7 +60,6 @@ export default function AnalyticsPage() {
       { title: 'Customer Flow', image: '/img/bank/customer-flow.png' },
     ],
   };
-  const [openItem, setOpenItem] = useState<number | null>(null);
 
   const faqItems = [
     {
@@ -87,12 +83,6 @@ export default function AnalyticsPage() {
       answer: "It delivers insights like footfall analysis, intrusion detection, customer demographics, queue management, PPE compliance, energy monitoring, and more, depending on the industry use case."
     }
   ];
-
-  const toggleItem = (id: number) => {
-    setOpenItem(openItem === id ? null : id);
-  };
-  
-  
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -134,28 +124,41 @@ export default function AnalyticsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 items-center justify-items-center">
-            {customers.map((customer, index) => (
-              <div
-                key={index}
-                className="transform transition duration-300 hover:scale-105 p-4 flex items-center justify-center w-full h-24"
-              >
-                <Image
-                  src={customer.logo}
-                  alt={customer.name}
-                  className="max-h-12 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
-                />
-              </div>
-            ))}
-          </div>
+          {/* Client Logo Section */}
+          <section className="bg-white text-black">
 
-          
+            {/* Logo Container */}
+            <div className="w-full overflow-hidden relative">
+              <div className="animate-scroll-x flex w-max gap-8 md:gap-12">
+                {/* Repeat logos if needed for seamless loop */}
+                {[...Array(2)].map((_, i) => (
+                  <React.Fragment key={i}>
+                    {[...Array(10)].map((_, j) => (
+                      <div
+                        key={j + i * 10}
+                        className="flex-none border border-gray-300 shadow-md rounded-md p-2"
+                      >
+                        <Image
+                          src={`/img/clients/client${j + 1}.png`}
+                          alt={`client-${j + 1}`}
+                          width={140}
+                          height={60}
+                        />
+                      </div>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+          </section>
+
+
         </div>
       </section>
 
       {/* Our Products Section */}
       <section className="bg-white">
-        
+
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-20 py-10">
           {/* Left Side Image */}
           <div className="flex justify-center items-center md:w-2/5">
@@ -359,34 +362,29 @@ export default function AnalyticsPage() {
             Frequently Asked <span className="text-indigo-700">Questions</span>
           </h2>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-4">
-              {faqItems.map((item) => (
-                <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-                  <button
-                    onClick={() => toggleItem(item.id)}
-                    className="w-full px-6 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    <span className="text-left font-medium text-black">{item.question}</span>
-                    <div
-                      className={`bg-red-500 rounded-full w-6 h-6 flex items-center justify-center text-white ml-4 transition-transform duration-300 ${openItem === item.id ? 'rotate-45' : ''}`}
-                    >
-                      +
+          {faqItems.map((item) => (
+            <div key={item.id} className="mx-4 md:mx-28 py-3">
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value={item.id} className="border border-gray-200 rounded-lg overflow-hidden">
+                  <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
+                    <div className="flex justify-between items-center w-full">
+                      <span className="text-left font-medium text-black">
+                        {item.question}
+                      </span>
+                      <div className="bg-[#f16e5a] rounded-full w-6 h-6 flex items-center justify-center text-white ml-4 group-data-[state=open]:rotate-180 transition-transform">
+                        +
+                      </div>
                     </div>
-                  </button>
-
-                  {openItem === item.id && (
-                    <div
-                      className="px-6 pb-4 pt-2 text-gray-600 animate-fadeIn"
-                      style={{ animation: 'fadeIn 0.3s ease-in-out' }}
-                    >
+                  </AccordionTrigger>
+                  <AccordionContent className="px-4 sm:px-6 py-4 bg-white">
+                    <p className="text-gray-600">
                       {item.answer}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>)
+          )}
         </div>
 
         <style jsx>{`

@@ -4,7 +4,6 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { useState } from 'react';
-import { ChevronRight } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -73,96 +72,83 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-8 md:py-10 px-4 bg-white">
-        <div className="container mx-auto">
-          <div className="bg-white rounded-lg shadow-lg flex flex-col md:flex-row w-full max-w-4xl mx-auto overflow-hidden">
+      <section className="py-10 bg-white">
+        <div className="container mx-auto flex justify-center">
+          <div className="bg-white rounded-lg shadow-lg flex flex-col md:flex-row w-full max-w-4xl">
             {/* Left Side - Contact Information */}
-            <div className="bg-[#171440] md:rounded-l-lg p-6 md:p-12 text-white flex flex-col justify-evenly relative">
-              <h2 className="text-xl font-bold mb-6">Contact Information</h2>
-              <div className="flex flex-col space-y-6 pt-0">
-                <div className="flex items-start">
-                  <div className="rounded-full bg-[#2c2869] p-2 mr-3 flex-shrink-0">
-                    <Image src="/img/contact/phonevector.png" alt="Phone" width={16} height={16} className="w-4 h-4" />
-                  </div>
-                  <span className="text-sm md:text-base">+91 97915 97993</span>
+            <div className="bg-[#171440] rounded-l-lg p-12 text-white flex flex-col justify-evenly relative">
+              <h2 className="text-xl font-bold mb-0">Contact Information</h2>
+              {/* <p className="mb-6">
+                Lorem ipsum dolor sit amet consectetur. Amet vitae enim lorem suspendisse non erat.
+              </p> */}
+              <div className="flex flex-col space-y-4 pt-0">
+                <div className="flex items-center">
+                  <Image src="/img/contact/phonevector.png" alt="Phone" width={20} height={20} />
+                  <span className="ml-2">+91 97915 97993</span>
                 </div>
-                <div className="flex items-start">
-                  <div className="rounded-full bg-[#2c2869] p-2 mr-3 flex-shrink-0">
-                    <Image src="/img/contact/mailvector.png" alt="Email" width={16} height={16} className="w-4 h-4" />
-                  </div>
-                  <span className="text-sm md:text-base">info@thefusionapps.com</span>
+                <div className="flex items-center">
+                  <Image src="/img/contact/mailvector.png" alt="Email" width={20} height={20} />
+                  <span className="ml-2">info@thefusionapps.com</span>
                 </div>
-                <div className="flex items-start">
-                  <div className="rounded-full bg-[#2c2869] p-2 mr-3 flex-shrink-0">
-                    <Image src="/img/contact/locvector.png" alt="Address" width={16} height={16} className="w-4 h-4" />
-                  </div>
-                  <span className="text-sm md:text-base">
+                <div className="flex items-center">
+                  <Image src="/img/contact/locvector.png" alt="Address" width={20} height={20} />
+                  <span className="ml-2">
                     The Fusion Apps, Vaiyapuri Nagar, Saravanampatti, Coimbatore, Tamil Nadu 641035
                   </span>
                 </div>
               </div>
-              <div className="absolute bottom-0 right-0 pointer-events-none">
-                <div className="w-24 h-24 bg-gradient-to-r from-purple-400 to-transparent rounded-full opacity-30"></div>
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-transparent rounded-full opacity-20"></div>
+              <div className="absolute bottom-0 right-0">
+                <div className="w-32 h-32 bg-gradient-to-r from-purple-400 to-transparent rounded-full opacity-30"></div>
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-transparent rounded-full opacity-20"></div>
               </div>
             </div>
 
             {/* Right Side - Send Message Form */}
-            <div className="bg-white md:rounded-r-lg p-6 md:p-12 flex-1">
-              <h2 className="text-xl font-medium text-black mb-6">Send Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="relative">
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your Name"
-                    required
-                    className="w-full border border-gray-300 rounded-lg text-black p-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EE3D5C]"
-                  />
-                </div>
-                <div className="relative">
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Email"
-                    required
-                    className="w-full border border-gray-300 rounded-lg text-black p-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EE3D5C]"
-                  />
-                </div>
-                <div className="relative">
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Message"
-                    required
-                    className="w-full border border-gray-300 rounded-lg text-black p-3 h-32 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EE3D5C]"
-                  ></textarea>
-                </div>
-                
+            <div className="bg-white rounded-r-lg p-14 flex flex-col">
+              <h2 className="text-xl font-medium text-black mb-4">Send Message</h2>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Your Name"
+                  required
+                  className="w-full border border-gray-300 rounded-md text-black p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EE3D5C]"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                  required
+                  className="w-full border border-gray-300 rounded-md text-black p-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EE3D5C]"
+                />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Message"
+                  required
+                  className="w-full border border-gray-300 rounded-md text-black p-2 h-32 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EE3D5C]"
+                ></textarea>
                 {status.type && (
                   <div
-                    className={`p-3 rounded-md ${
-                      status.type === 'success'
+                    className={`p-3 rounded-md ${status.type === 'success'
                         ? 'bg-green-100 text-green-700'
                         : 'bg-red-100 text-red-700'
-                    }`}
+                      }`}
                   >
                     {status.message}
                   </div>
                 )}
-                
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full rounded-lg py-3 px-4 flex items-center justify-center bg-gradient-to-r from-[#EE3D5C] via-[#F28159] to-[#F4B457] text-white hover:opacity-90 transition-all disabled:opacity-50"
+                  className="w-full rounded-md py-2 px-4 bg-[linear-gradient(90deg,#EE3D5C_-46.18%,#F28159_69.39%,#F4B457_197.13%)] text-white hover:opacity-90 transition-opacity disabled:opacity-50"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
-                  {!isSubmitting && <ChevronRight className="ml-2 w-4 h-4" />}
                 </button>
               </form>
             </div>

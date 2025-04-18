@@ -20,11 +20,14 @@ export function FaqSection() {
         <div className="mt-12">
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group" aria-label="Toggle FAQ about Fusion Analytics">
+              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     What makes Fusion Analytics different from traditional analytics solutions?
                   </span>
+                  <div className="bg-[#f16e5a] rounded-full w-6 h-6 flex items-center justify-center text-white ml-4 group-data-[state=open]:rotate-180 transition-transform">
+                    +
+                  </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-4 sm:px-6 py-4 bg-white">
@@ -38,11 +41,14 @@ export function FaqSection() {
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group" aria-label="Toggle FAQ about system integration">
+              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     How easily can Fusion Analytics integrate with existing systems?
                   </span>
+                  <div className="bg-[#f16e5a] rounded-full w-6 h-6 flex items-center justify-center text-white ml-4 group-data-[state=open]:rotate-180 transition-transform">
+                    +
+                  </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-4 sm:px-6 py-4 bg-white">
@@ -55,11 +61,14 @@ export function FaqSection() {
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group" aria-label="Toggle FAQ about industry benefits">
+              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden" >
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     What industries benefit most from Fusion Analytics?
                   </span>
+                  <div className="bg-[#f16e5a] rounded-full w-6 h-6 flex items-center justify-center text-white ml-4 group-data-[state=open]:rotate-180 transition-transform">
+                    +
+                  </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-4 sm:px-6 py-4 bg-white">
@@ -73,11 +82,14 @@ export function FaqSection() {
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group" aria-label="Toggle FAQ about analytics insights">
+              <AccordionTrigger className="px-4 sm:px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                 <div className="flex justify-between items-center w-full">
                   <span className="text-left font-medium text-black">
                     How quickly can we start seeing insights from our data?
                   </span>
+                  <div className="bg-[#f16e5a] rounded-full w-6 h-6 flex items-center justify-center text-white ml-4 group-data-[state=open]:rotate-180 transition-transform">
+                    +
+                  </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-4 sm:px-6 py-4 bg-white">

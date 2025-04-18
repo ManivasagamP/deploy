@@ -11,7 +11,7 @@ export default function RetailIndustry() {
       <Navbar activePage="industries" />
 
       {/* Hero Section */}
-      <div className="relative w-full h-[300px] md:h-[400px] bg-gradient-to-r overflow-hidden">
+      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
         <Image
           src="/img/industries/retailBanner.png"
@@ -20,10 +20,10 @@ export default function RetailIndustry() {
           className="object-cover mix-blend-multiply"
           priority
         />
-        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center md:ml-20 ml-4">
-          <div className="border-l-4 border-white pl-4 max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Nexus Mall</h1>
-            <p className="text-white/90">
+        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center md:ml-15">
+          <div className="border-l-4 border-white pl-4 max-w-xl mx-4 md:mx-0">
+            <h1 className="text-3xl md:text-5xl font-bold text-white  mb-2 md:mb-4">Nexus Mall</h1>
+            <p className="text-white/90 text-sm md:text-base">
               From streamlining operations and enhancing customer experiences to improving decision-making with real-time insights—Fusion Engine helps retailers stay ahead in a fast-paced market. Unlock the full potential of your retail business today.
 
             </p>
@@ -103,8 +103,6 @@ export default function RetailIndustry() {
                   <li>Current business analytics system needs a major upgrade</li>
                   <li>Logistics and operations issues</li>
                 </ul>
-
-                <p className="text-gray-700 mb-4">Trust me, I can keep going on!</p>
               </div>
             </div>
           </div>
@@ -357,7 +355,7 @@ export default function RetailIndustry() {
 
               {/* Question 1 */}
               <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       What is Fusion Engine?
@@ -374,7 +372,7 @@ export default function RetailIndustry() {
 
               {/* Question 2 */}
               <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       How does Fusion Engine transform retail operations?
@@ -391,7 +389,7 @@ export default function RetailIndustry() {
 
               {/* Question 3 */}
               <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       What retail challenges does Fusion Engine address?
@@ -417,7 +415,7 @@ export default function RetailIndustry() {
 
               {/* Question 4 */}
               <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       What key features does Fusion Engine offer?
@@ -447,7 +445,7 @@ export default function RetailIndustry() {
 
               {/* Question 5 */}
               <AccordionItem value="item-5" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       How can Fusion Engine drive business growth?

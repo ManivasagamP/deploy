@@ -251,7 +251,7 @@ export default function ANPRPage() {
           <div className="mx-4 md:mx-12">
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       How accurate is Fusion ANPR in reading number plates?
@@ -267,7 +267,7 @@ export default function ANPRPage() {
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Can Fusion ANPR integrate with my existing surveillance or parking system?
@@ -283,7 +283,7 @@ export default function ANPRPage() {
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Is ANPR data stored securely?
@@ -299,7 +299,7 @@ export default function ANPRPage() {
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       What types of license plates does Fusion ANPR support?

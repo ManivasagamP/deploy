@@ -20,12 +20,11 @@ export default function BankIndustry() {
           className="object-cover mix-blend-multiply"
           priority
         />
-        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center ml-20">
-          <div className="border-l-4 border-white pl-4 max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Banking</h1>
-            <p className="text-white/90">
+        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center ml-5">
+          <div className="border-l-4 border-white pl-4 max-w-xl mx-4 md:mx-0">
+            <h1 className="text-3xl md:text-5xl font-bold text-white  mb-2 md:mb-4">Banking</h1>
+            <p className="text-white/90 text-sm md:text-base">
               From strengthening ATM and branch security to optimizing employee performance and safeguarding customer trust—Fusion Engine empowers banks to lead with confidence in a digitally evolving world. Secure your banking future today.
-
             </p>
           </div>
         </div>
@@ -296,7 +295,7 @@ export default function BankIndustry() {
           <div className="mx-4 sm:mx-6 lg:mx-12">
             <Accordion type="single" collapsible className="space-y-4">
               <AccordionItem value="item-1" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       What banking problems does Fusion Engine help solve?
@@ -313,7 +312,7 @@ export default function BankIndustry() {
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Can Fusion Engine improve security at bank branches and ATMs?
@@ -331,7 +330,7 @@ export default function BankIndustry() {
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Does Fusion Engine support employee performance analysis?
@@ -349,7 +348,7 @@ export default function BankIndustry() {
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border border-gray-200 rounded-lg overflow-hidden">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group">
+                <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-gray-50 group [&>svg]:hidden">
                   <div className="flex justify-between items-center w-full">
                     <span className="text-left font-medium text-black">
                       Why should banks choose Fusion Engine over other solutions?
